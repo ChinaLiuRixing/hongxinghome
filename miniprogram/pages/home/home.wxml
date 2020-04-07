@@ -1,0 +1,42 @@
+<!--miniprogram/pages/home/home.wxml-->
+<view class="container">
+	<!-- <block wx:for="{{listData}}" wx:key="{{code}}">
+		<view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+			<view class="td">{{item.code}}</view>
+			<view class="td">{{item.text}}</view>
+			<view class="td">{{item.type}}</view>
+		</view>
+		<view class="tr" wx:else>
+			<view class="td">{{item.code}}</view>
+			<view class="td">{{item.text}}</view>
+			<view class="td">{{item.type}}</view>
+		</view>
+	</block> -->
+  <view class="btn-container">
+    <view class="{{item.type==='btn'?'btn item':'item title'}}" wx:for="{{listData}}" wx:key="index">
+    <view wx:if="{{item.type==='btn'}}">
+      <view class="item-btn" data-location="{{item.location}}" bindtap="add">添加</view>
+      <view class="item-btn" data-location="{{item.location}}" bindtap="showDetail">{{item.value}}</view>
+    </view>
+    <view wx:else>
+    {{item.title}}
+    </view>
+    </view>
+  </view>
+
+	<view class="modal" wx:if="{{modalshow}}" data-id="modal" bindtap="modalTap">
+		<view class="modal-container">
+			<view class="title">{{modalCur.title}}</view>
+			<view class="itemView">金额：
+				<input class="input" name="price" value="{{modalCur.price}}" placeholder="请输入金额" 
+				bindinput="priceInput"/>
+			</view>
+			<view class="itemView">备注：
+				<input class="input" name="remark" value="{{modalCur.remark}}" placeholder="请输入备注(最多八个字)" 
+				bindinput="remarkInput"/>
+			</view>
+			<view class="modal-btn submit" bindtap="onSubmit">确定</view>
+			<view class="modal-btn cancel" bindtap="onModal">关闭</view>
+		</view>
+	</view>
+</view>

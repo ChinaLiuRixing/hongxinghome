@@ -1,0 +1,60 @@
+{
+    "202004": [
+        {
+            "_id": "f3db088f5e87545a00505e8e3315d49b",
+            "time": 1.585928269739e+12,
+            "remark": "remark",
+            "type1": 0.0,
+            "type2": 0.0,
+            "value": 100.0,
+            "person": "lrx"
+        },
+        {
+            "_id": "f3db088f5e87545a00505e8e3315d49b",
+            "time": 1485670400000,
+            "remark": "remark",
+            "type1": 0.0,
+            "type2": 0.0,
+            "value": 50,
+            "person": "lrx"
+        },
+        {
+            "_id": "f3db088f5e87545a00505e8e3315d49b",
+            "time": 1.585928269739e+12,
+            "remark": "remark",
+            "type1": 1,
+            "type2": 1,
+            "value": 100.0,
+            "person": "lrx"
+        },
+        {
+            "_id": "f3db088f5e87545a00505e8e3315d49b",
+            "time": 1485670400000,
+            "remark": "remark",
+            "type1": 1,
+            "type2": 1,
+            "value": 50,
+            "person": "lrx"
+        }
+    ],
+    "202003": [
+        {
+            "_id": "f3db088f5e87545a00505e8e3315d49b",
+            "time": 1.585928269739e+12,
+            "remark": "remark",
+            "type1": 0.0,
+            "type2": 0.0,
+            "value": 100.0,
+            "person": "lrx"
+        },
+        {
+            "_id": "f3db088f5e87545a00505e8e3315d49b",
+            "time": 1485670400000,
+            "remark": "remark",
+            "type1": 0.0,
+            "type2": 0.0,
+            "value": 50,
+            "person": "lrx"
+        }
+    ]
+}

@@ -1,0 +1,80 @@
+/* miniprogram/pages/home/home.wxss */
+/* .container{ */
+/* background: rgba(255, 5, 5, 0.2); */
+/* } */
+.btn-container {
+  display: grid;
+  grid-template-columns: repeat(3, 250rpx);
+  grid-template-rows: repeat(4, 200rpx);
+}
+
+.btn-container .item {
+  margin: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* display: grid;
+  grid-template-columns: repeat(2,125rpx);
+  grid-template-rows: repeat(2,125rpx); */
+}
+.btn-container .item .item-btn{
+  width: 220rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: pink;
+  text-align: center;
+  margin: 5rpx;
+}
+
+.btn-container .btn {
+  background: yellowgreen;
+}
+
+.btn-container .title {
+  background: blanchedalmond;
+  line-height: 200rpx;
+  text-align: center;
+}
+
+.modal{
+  background: rgba(0, 0, 0,0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.modal-container{
+  background: white;
+  border-radius: 15rpx;
+  width: 600rpx;
+  margin:20rpx auto;
+  padding-bottom: 5rpx;
+  /* height: 500rpx; */
+}
+.modal-container .title{
+  margin-top: 20rpx;
+  text-align: center;
+}
+.modal-container .modal-btn{
+  padding: 30rpx;
+  color:white;
+  text-align: center;
+  margin-top: 5rpx;
+}
+.modal-container .submit{
+  border-top-left-radius: 50%;
+  background-color: #c45a65;  
+}
+.modal-container .cancel{
+  border-bottom-right-radius: 50%;
+  background-color: #41395b;
+}
+.itemView{
+  padding: 50rpx 20rpx;
+  color:grey;
+}
+.itemView .input{
+  color:black;
+}

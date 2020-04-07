@@ -1,0 +1,11 @@
+<!--miniprogram/pages/detail/detail.wxml-->
+<view class="container">
+  <view class="title">{{title}}</view>
+  <view class="btn">统计</view>
+  <view class="item" wx:for="{{listdata}}" wx:key="index">
+    <view class="detail-item-item person">{{item.person}}</view>
+    <view class="detail-item-item time">{{item.time}}</view>
+    <view class="detail-item-item value">{{item.value}}</view>
+    <view class="detail-item-item remark">{{item.remark}}</view>
+  </view>
+</view>
